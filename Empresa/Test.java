@@ -29,14 +29,14 @@ public class Test {
         empleado3.setSalarioEmpleado("$10,000");    // Establecemos el salario del empleado
         empleado3.setDepartamento(ventas);  // Establecemos el departamento del empleado
 
-        soporte.addEmpleado(empleado3.getInformacion());    // Agregamos el empleado al departamento
+        ventas.addEmpleado(empleado3.getInformacion());    // Agregamos el empleado al departamento
 
         empleado4.setNombreEmpleado("Ana Torres");  // Establecemos el nombre del empleado
         empleado4.setNumeroEmpleado("#0004");   // Establecemos el numero del empleado
         empleado4.setSalarioEmpleado("$10,000");    // Establecemos el salario del empleado
         empleado4.setDepartamento(ventas);  // Establecemos el departamento del empleado
 
-        soporte.addEmpleado(empleado4.getInformacion());    // Agregamos el empleado al departamento
+        ventas.addEmpleado(empleado4.getInformacion());    // Agregamos el empleado al departamento
 
         System.out.println(soporte.getEmpleados()); // Imprimimos los empleados del departamento
         System.out.println(ventas.getEmpleados());  // Imprimimos los empleados del departamento
