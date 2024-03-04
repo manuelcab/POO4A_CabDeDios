@@ -2,7 +2,7 @@ public class Docente extends Persona{
     
     //ATRIBUTOS//
     private String numeroEmpleado;
-    private String materias;
+    private String materia;
     private String horas;
 	private String gradoAcademico;
 	private String certificaciones;
@@ -10,10 +10,10 @@ public class Docente extends Persona{
 	private String salario;
 
     //CONSTRUCTOR//
-    public Docente(String nombre, String apellido, String edad, String genero, String direccion, String telefono, String correo, String numeroEmpleado, String materias, String horas, String gradoAcademico, String certificaciones, String idiomas, String salario) {
+    public Docente(String nombre, String apellido, String edad, String genero, String direccion, String telefono, String correo, String numeroEmpleado, String materia, String horas, String gradoAcademico, String certificaciones, String idiomas, String salario) {
         super(nombre, apellido, edad, genero, direccion, telefono, correo);
         this.numeroEmpleado = numeroEmpleado;
-        this.materias = materias;
+        this.materia = materia;
         this.horas = horas;
         this.gradoAcademico = gradoAcademico;
         this.certificaciones = certificaciones;
@@ -26,8 +26,8 @@ public class Docente extends Persona{
         return numeroEmpleado;
     }
 
-    public String getMaterias() {
-        return materias;
+    public String getMateria() {
+        return materia;
     }
 
     public String getHoras() {
@@ -56,8 +56,8 @@ public class Docente extends Persona{
         this.numeroEmpleado = numeroEmpleado;
     }
 
-    public void setMaterias(String materias) {
-        this.materias = materias;
+    public void setMateria(String materia) {
+        this.materia = materia;
     }
 
     public void setHoras(String horas) {
