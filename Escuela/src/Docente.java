@@ -10,15 +10,8 @@ public class Docente extends Persona{
 	private String salario;
 
     //CONSTRUCTOR//
-    public Docente(String nombre, String apellido, String edad, String genero, String direccion, String telefono, String correo, String numeroEmpleado, String materia, String horas, String gradoAcademico, String certificaciones, String idiomas, String salario) {
-        super(nombre, apellido, edad, genero, direccion, telefono, correo);
-        this.numeroEmpleado = numeroEmpleado;
-        this.materia = materia;
-        this.horas = horas;
-        this.gradoAcademico = gradoAcademico;
-        this.certificaciones = certificaciones;
-        this.idiomas = idiomas;
-        this.salario = salario;
+    public Docente() {
+
     }
 
     //GETTERS//

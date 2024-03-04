@@ -9,14 +9,8 @@ public class Estudiante extends Persona{
     private String grupo;
 
     //CONSTRUCTOR//
-    public Estudiante(String nombre, String apellido, String edad, String genero, String direccion, String telefono, String correo, String matricula, String facultad, String carrera, String semestre, String promedio, String grupo) {
-        super(nombre, apellido, edad, genero, direccion, telefono, correo);
-        this.matricula = matricula;
-        this.facultad = facultad;
-        this.carrera = carrera;
-        this.semestre = semestre;
-        this.promedio = promedio;
-        this.grupo = grupo;
+    public Estudiante() {
+        
     }
 
     //GETTERS//

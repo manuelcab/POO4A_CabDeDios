@@ -10,14 +10,8 @@ public class Persona {
     private String correo;
 
     //CONSTRUCTOR//
-    public Persona(String nombre, String apellido, String edad, String genero, String direccion, String telefono, String correo) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-        this.genero = genero;
-        this.direccion = direccion;
-        this.telefono = telefono;
-        this.correo = correo;
+    public Persona() {
+  
     }
 
     //GETTERS//

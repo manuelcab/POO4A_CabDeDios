@@ -8,7 +8,7 @@ CREATE TABLE estudiantes (
     telefono VARCHAR(10) NOT NULL , 
     correo VARCHAR(100) NOT NULL , 
     matricula VARCHAR(10) NOT NULL , 
-    facultad VARCHAR(20) NOT NULL , 
+    facultad VARCHAR(50) NOT NULL , 
     carrera VARCHAR(50) NOT NULL , 
     semestre VARCHAR(15) NOT NULL , 
     promedio VARCHAR(10) NOT NULL , 
