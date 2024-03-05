@@ -1,3 +1,8 @@
+package test;
+
+import clases.Estudiante;
+import conexion.Operaciones;
+
 public class test {
 
     public static void main(String[] args) {
