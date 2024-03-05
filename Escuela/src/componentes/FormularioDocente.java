@@ -23,6 +23,23 @@ import javax.swing.JTextField;
 
 public class FormularioDocente extends JFrame{
 
+    private JButton botonRegistrar;
+    private JButton botonCerrar;
+    private JTextField campoNombre;
+    private JTextField campoApellido;
+    private JTextField campoEdad;
+    private JTextField campoGenero;
+    private JTextField campoDireccion;
+    private JTextField campoTelefono;
+    private JTextField campoCorreo;
+    private JTextField campoNumeroEmpleado;
+    private JTextField campoMateria;
+    private JTextField campoHoras;
+    private JTextField campoGradoAcademico;
+    private JTextField campoCertificaciones;
+    private JTextField campoSalario;
+    private JTextArea datos;
+
     public FormularioDocente(){
 
         configurarVentana();
@@ -80,7 +97,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 1;
         panel.add(nombre, constraints);
 
-        JTextField campoNombre = crearCampoTexto();
+        campoNombre = crearCampoTexto();
         constraints.gridx = 0;
         constraints.gridy = 2;
         panel.add(campoNombre, constraints);
@@ -90,7 +107,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 3;
         panel.add(apellido, constraints);
 
-        JTextField campoApellido = crearCampoTexto();
+        campoApellido = crearCampoTexto();
         constraints.gridx = 0;
         constraints.gridy = 4;
         panel.add(campoApellido, constraints);
@@ -100,7 +117,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 5;
         panel.add(edad, constraints);
 
-        JTextField campoEdad = crearCampoTexto();
+        campoEdad = crearCampoTexto();
         constraints.gridx = 0;
         constraints.gridy = 6;
         panel.add(campoEdad, constraints);
@@ -110,7 +127,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 7;
         panel.add(genero, constraints);
 
-        JTextField campoGenero = crearCampoTexto();
+        campoGenero = crearCampoTexto();
         constraints.gridx = 0;
         constraints.gridy = 8;
         panel.add(campoGenero, constraints);
@@ -120,7 +137,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 9;
         panel.add(direccion, constraints);
 
-        JTextField campoDireccion = crearCampoTexto();
+        campoDireccion = crearCampoTexto();
         constraints.gridx = 0;
         constraints.gridy = 10;
         panel.add(campoDireccion, constraints);
@@ -130,7 +147,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 11;
         panel.add(telefono, constraints);
 
-        JTextField campoTelefono = crearCampoTexto();
+        campoTelefono = crearCampoTexto();
         constraints.gridx = 0;
         constraints.gridy = 12;
         panel.add(campoTelefono, constraints);
@@ -140,7 +157,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 13;
         panel.add(correo, constraints);
 
-        JTextField campoCorreo = crearCampoTexto();
+        campoCorreo = crearCampoTexto();
         constraints.insets = new Insets(5, 10, 30, 10);
         constraints.gridx = 0;
         constraints.gridy = 14;
@@ -152,7 +169,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 1;
         panel.add(numeroEmpleado, constraints);
 
-        JTextField campoNumeroEmpleado = crearCampoTexto();
+        campoNumeroEmpleado = crearCampoTexto();
         constraints.gridx = 1;
         constraints.gridy = 2;
         panel.add(campoNumeroEmpleado, constraints);
@@ -162,7 +179,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 3;
         panel.add(materia, constraints);
 
-        JTextField campoMateria = crearCampoTexto();
+        campoMateria = crearCampoTexto();
         constraints.gridx = 1;
         constraints.gridy = 4;
         panel.add(campoMateria, constraints);
@@ -172,7 +189,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 5;
         panel.add(horas, constraints);
         
-        JTextField campoHoras = crearCampoTexto();
+        campoHoras = crearCampoTexto();
         constraints.gridx = 1;
         constraints.gridy = 6;
         panel.add(campoHoras, constraints);
@@ -182,7 +199,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 7;
         panel.add(gradoAcademico, constraints);
 
-        JTextField campoGradoAcademico = crearCampoTexto();
+        campoGradoAcademico = crearCampoTexto();
         constraints.gridx = 1;
         constraints.gridy = 8;
         panel.add(campoGradoAcademico, constraints);
@@ -192,7 +209,7 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 9;
         panel.add(certificaciones, constraints);
 
-        JTextField campoCertificaciones = crearCampoTexto();
+        campoCertificaciones = crearCampoTexto();
         constraints.gridx = 1;
         constraints.gridy = 10;
         panel.add(campoCertificaciones, constraints);
@@ -202,12 +219,12 @@ public class FormularioDocente extends JFrame{
         constraints.gridy = 11;
         panel.add(salario, constraints);
 
-        JTextField campoSalario = crearCampoTexto();
+        campoSalario = crearCampoTexto();
         constraints.gridx = 1;
         constraints.gridy = 12;
         panel.add(campoSalario, constraints);
 
-        JTextArea datos = crearTextArea();
+        datos = crearTextArea();
         constraints.insets = new Insets(5, 10, 30, 10);
         constraints.gridx = 2;
         constraints.gridy = 2;
@@ -218,14 +235,14 @@ public class FormularioDocente extends JFrame{
         
         constraints.insets = new Insets(5, 10, 30, 10);
 
-        JButton botonRegistrar = crearBoton("Registrar");
+        botonRegistrar = crearBoton("Registrar");
         constraints.gridx = 1;
         constraints.gridy = 13;
         constraints.gridheight = 2;
         constraints.fill = GridBagConstraints.NONE;
         panel.add(botonRegistrar, constraints);
 
-        JButton botonCerrar = crearBotonCerrar();
+        botonCerrar = crearBotonCerrar();
         constraints.insets = new Insets(10, 1, 1, 10);
         constraints.gridx = 3;
         constraints.gridy = 0;
@@ -457,4 +474,71 @@ public class FormularioDocente extends JFrame{
 
     }
 
+    public JButton getBotonRegistrar() {
+        return botonRegistrar;
+    }
+
+    public JButton getBotonCerrar() {
+        return botonCerrar;
+    }
+
+    public JTextField getCampoNombre() {
+        return campoNombre;
+    }
+
+    public JTextField getCampoApellido() {
+        return campoApellido;
+    }
+
+    public JTextField getCampoEdad() {
+        return campoEdad;
+    }
+
+    public JTextField getCampoGenero() {
+        return campoGenero;
+    }
+
+    public JTextField getCampoDireccion() {
+        return campoDireccion;
+    }
+
+    public JTextField getCampoTelefono() {
+        return campoTelefono;
+    }
+
+    public JTextField getCampoCorreo() {
+        return campoCorreo;
+    }
+
+    public JTextField getCampoNumeroEmpleado() {
+        return campoNumeroEmpleado;
+    }
+
+    public JTextField getCampoMateria() {
+        return campoMateria;
+    }
+
+    public JTextField getCampoHoras() {
+        return campoHoras;
+    }
+
+    public JTextField getCampoGradoAcademico() {
+        return campoGradoAcademico;
+    }
+
+    public JTextField getCampoCertificaciones() {
+        return campoCertificaciones;
+    }
+
+    public JTextField getCampoSalario() {
+        return campoSalario;
+    }
+
+    public JTextArea getDatos() {
+        return datos;
+    }
+
+    public void setDatos(JTextArea datos) {
+        this.datos = datos;
+    }
 }
