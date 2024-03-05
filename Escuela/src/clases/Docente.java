@@ -8,7 +8,6 @@ public class Docente extends Persona{
     private String horas;
 	private String gradoAcademico;
 	private String certificaciones;
-	private String idiomas;
 	private String salario;
 
     //CONSTRUCTOR//
@@ -37,10 +36,6 @@ public class Docente extends Persona{
         return certificaciones;
     }
 
-    public String getIdiomas() {
-        return idiomas;
-    }
-
     public String getSalario() {
         return salario;
     }
@@ -65,10 +60,6 @@ public class Docente extends Persona{
 
     public void setCertificaciones(String certificaciones) {
         this.certificaciones = certificaciones;
-    }
-
-    public void setIdiomas(String idiomas) {
-        this.idiomas = idiomas;
     }
 
     public void setSalario(String salario) {

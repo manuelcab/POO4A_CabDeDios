@@ -2,7 +2,7 @@ package main;
 
 import javax.swing.SwingUtilities;
 
-import componentes.FormularioEstudiante;
+import componentes.FormularioDocente;
 
 public class App {
     
@@ -10,7 +10,7 @@ public class App {
         
         SwingUtilities.invokeLater(() -> {
             
-            FormularioEstudiante formulario = new FormularioEstudiante();
+            FormularioDocente formulario = new FormularioDocente();
             formulario.setVisible(true);
 
         });
