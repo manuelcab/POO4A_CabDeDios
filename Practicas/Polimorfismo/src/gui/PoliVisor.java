@@ -5,6 +5,7 @@ import java.awt.Graphics;
 
 import javax.swing.JColorChooser;
 
+import graphics.Circulo;
 import graphics.Cuadrado;
 import graphics.FiguraGrafica;
 import graphics.Rectangulo;
@@ -38,6 +39,7 @@ public class PoliVisor extends javax.swing.JFrame {
         botonCuadrado = new javax.swing.JButton();
         botonRectangulo = new javax.swing.JButton();
         botonTriangulo = new javax.swing.JButton();
+        botonCirculo = new javax.swing.JButton();
         panelControl = new javax.swing.JPanel();
         botonArriba = new javax.swing.JButton();
         botonColor = new javax.swing.JButton();
@@ -73,6 +75,13 @@ public class PoliVisor extends javax.swing.JFrame {
             }
         });
 
+        botonCirculo.setText("Un Circulo!");
+        botonCirculo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt){
+                botonCirculoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout panelTipoLayout = new javax.swing.GroupLayout(panelTipo);
         panelTipo.setLayout(panelTipoLayout);
         panelTipoLayout.setHorizontalGroup(
@@ -80,6 +89,7 @@ public class PoliVisor extends javax.swing.JFrame {
             .addGroup(panelTipoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panelTipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botonCirculo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(botonTriangulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(botonRectangulo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(botonCuadrado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -94,6 +104,8 @@ public class PoliVisor extends javax.swing.JFrame {
                 .addComponent(botonRectangulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(botonTriangulo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(botonCirculo)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -287,6 +299,12 @@ public class PoliVisor extends javax.swing.JFrame {
         enableControls();
     }//GEN-LAST:event_botonRectanguloActionPerformed
 
+    private void botonCirculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCirculoActionPerformed
+        figura = new Circulo(50, 50, 25);
+        figura.dibujar(getPanelGraphics());
+        enableControls();
+    }//GEN-LAST:event_botonCirculoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -349,6 +367,7 @@ public class PoliVisor extends javax.swing.JFrame {
     private javax.swing.JButton botonPequeno;
     private javax.swing.JButton botonRectangulo;
     private javax.swing.JButton botonTriangulo;
+    private javax.swing.JButton botonCirculo;
     private javax.swing.JPanel panelControl;
     private javax.swing.JPanel panelFigura;
     private javax.swing.JPanel panelTipo;
