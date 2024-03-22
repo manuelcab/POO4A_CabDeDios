@@ -26,4 +26,11 @@ public class Reloj extends TareaPeriodica {
 				.println(String.format("%d%d%d", c.get(Calendar.HOUR), c.get(Calendar.MINUTE), c.get(Calendar.SECOND)));
 		return 0;
 	}
+
+	public void run() {
+		if (this.necesitaEjecucion()) {
+		this.ejecutarTarea();
+		}
+	}
+
 }

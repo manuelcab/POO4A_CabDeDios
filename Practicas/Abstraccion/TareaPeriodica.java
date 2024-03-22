@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public abstract class TareaPeriodica {
+public abstract class TareaPeriodica implements Runnable {
 
 	protected int periodo;
 	protected Date ultimaEjecucion;
